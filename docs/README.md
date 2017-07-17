@@ -11,6 +11,7 @@ MVP:
 - Nav bar Categories for products.
 - Shopping Cart/Auth.
 - Products have show page with more info /purchase functionality.
+
 Stretch:
 - Remember non Auth cart contents in a cookie.
 - Search products by tag type.
