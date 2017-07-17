@@ -1,10 +1,16 @@
-Outdoor Adventure World
+#Outdoor Adventure World
 
 Heroku Link :
 https://outdoor-adventure-world.herokuapp.com/
 
 Trello Link :
 https://trello.com/b/B9thYlen
+
+## Design Docs
+- [Schema](./schema.md)
+- [Api-Endpoints](./api-endpoints.md)
+- [Component-Heirarchy](./component-heirarchy.md)
+- [Sample-State](./sample-state.md)
 
 MVP:
 - Comments w/ ratings. Tied to product show page.

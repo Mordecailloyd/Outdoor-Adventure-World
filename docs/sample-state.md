@@ -21,7 +21,7 @@
       }
     }
   },
-  message: {
+  messages: {
     1: {
       title: "Great Deal!",
       author_id: 1,
