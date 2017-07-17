@@ -3,6 +3,9 @@ Outdoor Adventure World
 Heroku Link :
 https://outdoor-adventure-world.herokuapp.com/
 
+Trello Link :
+https://trello.com/b/B9thYlen
+
 MVP:
 - Comments w/ ratings. Tied to product show page.
 - Nav bar Categories for products.
