@@ -1,3 +1,4 @@
+```js
 {
   currentUser: {
     id: 1,
@@ -32,3 +33,4 @@
   }
   tagFilters: [1, 7, 14] // Used to track selected Tags for filtering of products
 }
+```

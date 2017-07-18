@@ -1,25 +1,25 @@
 #API-End Points.
 
-USERS
+## USERS
 - POST
 
-SESSION
+## SESSION
 - POST
 - DELETE
 
-PRODUCT
+## PRODUCT
 - GET
 - GET /id
 - GET /query tag param
 - GET (all in checkout cookie)
 
-MESSAGE
+## MESSAGE
 - GET ( all belonging to product id)
 - POST
 - PATCH
 - DELETE
 
-(?)CHECKOUT
+## (?)CHECKOUT
 - POST
 - GET
 - DELETE

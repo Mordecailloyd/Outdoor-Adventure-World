@@ -1,4 +1,4 @@
-#Outdoor Adventure World
+# Outdoor Adventure World
 
 Heroku Link :
 https://outdoor-adventure-world.herokuapp.com/
@@ -9,25 +9,25 @@ https://trello.com/b/B9thYlen
 ## Design Docs
 - [Schema](./schema.md)
 - [Api-Endpoints](./api-endpoints.md)
-- [Component-Heirarchy](./component-heirarchy.md)
+- [Component-Hierarchy](./component-heirarchy.md)
 - [Sample-State](./sample-state.md)
 
-MVP:
+## MVP:
 - Comments w/ ratings. Tied to product show page.
 - Nav bar Categories for products.
 - Shopping Cart/Auth.
 - Products have show page with more info /purchase functionality.
 
-Stretch:
+## Stretch:
 - Remember non Auth cart contents in a cookie.
 - Search products by tag type.
 - Payments system.
 
-WireFrames:
+## WireFrames:
 - See physical copies.
 
 
-Phase 1: (One day)
+## Phase 1: (One day)
 - Project init
 - Front end auth
 - user model/db validations
@@ -37,7 +37,7 @@ Phase 1: (One day)
 - components for container and html of signUp
 - working view for signup/in
 
-Phase 2: (Two days)
+## Phase 2: (Two days)
 - utils for homepage
 - actions for homepage(
   - actions for products
@@ -50,7 +50,7 @@ Phase 2: (Two days)
 - arrangement of homepage pieces
 - styling
 
-Phase 3: (One day)
+## Phase 3: (One day)
 - Show page for products
 - Images fit properly
 - styling
@@ -58,7 +58,7 @@ Phase 3: (One day)
 - flex
 - Nav bar space made
 
-Phase 4: (Two Days)
+## Phase 4: (Two Days)
 - backend/ model validations
 - Comments tied to user
 - Ratings
@@ -68,7 +68,7 @@ Phase 4: (Two Days)
 - edit message post
 - more seed data(usable)
 
-Phase 5: (One day)
+## Phase 5: (One day)
 - backend models/validations
 - Shopping cart
 - (?)auth required for checkout(initially?)
@@ -76,13 +76,13 @@ Phase 5: (One day)
 - checkout page
 - styling
 
-Phase 6: (One day)
+## Phase 6: (One day)
 - Nav bar
 - present across site
 - uses tags to find appropriate products
 - in creation of a new index page.
 
-Phase 7: (One day)
+## Phase 7: (One day)
 - Payments system
 - Cookie cart contents
 - Search for products by tags/ product name
