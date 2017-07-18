@@ -26,8 +26,13 @@ class SessionForm extends React.Component {
     setTimeout(() => this.setState({
       password: password.slice(0, j + 1)}), ((j + 5) * 100));
   }
-  const user = this.state;
-  setTimeout(() => this.props.requestLogin({user}), 1400);
+  const user = {
+    username: 'Nicholas',
+    password: 'password'
+  };
+  console.log("demo user");
+  console.log(user);
+  setTimeout(() => this.props.requestLogin({user}), 2000);
 }
 
   componentWillReceiveProps(nextProps) {
@@ -64,15 +69,17 @@ class SessionForm extends React.Component {
     this.setState({password: e.target.value});
   }
 
+
   renderErrors() {
-    console.log('render errors reached- error to follow');
-    console.log(this.props.errors);
     return(
+
       <ul>
         {this.props.errors.map((error, i) => (
-          <li key={i}>
-            {error}
-          </li>
+          <div className="alert alert-dismissible alert-danger" key={error}>
+            <li key={i}>
+              {error}
+            </li>
+          </div>
         ))}
       </ul>
     );
@@ -104,12 +111,14 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
-            <input type="submit" value="Submit" />
+            <input href="#" className="btn btn-success"
+              type="submit" value="Submit" />
+            <div className = "handle-demo">
+              <button href="#" className="btn btn-info" type='submit'
+                onClick={this.handleDemo}>Demo Log-in</button>
+            </div>
           </div>
         </form>
-        <div>
-          <button type='submit' onClick={this.handleDemo}>Demo Log-in</button>
-        </div>
       </div>
     );
   }
