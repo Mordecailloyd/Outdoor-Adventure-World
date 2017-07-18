@@ -10,9 +10,9 @@ const App = () => (
     <div>
       <h1>Outdoor Amazing World</h1>
       < GreetingContainer />
+      <Route path="/login" component={SessionFormContainer} />
+      <Route path="/signup" component={SessionFormContainer} />
     </div>
-    <Route path="/login" component={SessionFormContainer} />
-    <Route path="/signup" component={SessionFormContainer} />
   </div>
 );
 

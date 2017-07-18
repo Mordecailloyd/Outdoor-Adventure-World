@@ -1,3 +1,13 @@
+<!--
+
+<main id="root">test this is html.erb</main> -->
 
 
-<main id="root">test this is html.erb</main>
+<script id="bootstrap-current-user" type="text/javascript">
+  <% if logged_in? %>
+  	window.currentUser = <%= render("api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  <% end %>
+</script>
+
+<main id="root"></main>
