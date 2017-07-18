@@ -9,7 +9,7 @@ https://trello.com/b/B9thYlen
 ## Design Docs
 - [Schema](./schema.md)
 - [Api-Endpoints](./api-endpoints.md)
-- [Component-Hierarchy](./component-heirarchy.md)
+- [Component-Hierarchy](./component-hierarchy.md)
 - [Sample-State](./sample-state.md)
 
 ## MVP:
