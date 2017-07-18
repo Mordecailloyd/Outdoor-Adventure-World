@@ -6,6 +6,11 @@
 
 # Ignore bundler config.
 /.bundle
+bundle.js
+bundle.js.map
+node_modules/
+.DS_Store
+npm-debug.log
 
 # Ignore all logfiles and tempfiles.
 /log/*
