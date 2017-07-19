@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718170825) do
+ActiveRecord::Schema.define(version: 20170719161020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: :cascade do |t|
+    t.integer  "rating",     null: false
+    t.string   "body",       null: false
+    t.string   "title",      null: false
+    t.integer  "author_id",  null: false
+    t.integer  "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_messages_on_author_id", using: :btree
+    t.index ["product_id"], name: "index_messages_on_product_id", using: :btree
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title",      null: false
+    t.text     "body",       null: false
+    t.string   "image_url",  null: false
+    t.decimal  "price",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["price"], name: "index_products_on_price", using: :btree
+    t.index ["title"], name: "index_products_on_title", unique: true, using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        null: false
