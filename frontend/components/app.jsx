@@ -7,9 +7,9 @@ import Navbar from './navbar/navbar_container';
 
 const App = () => (
   <div>
-    <div>
+    <div className = 'app'>
       < Navbar />
-      <h1>Outdoor Amazing World</h1>
+      <div className='spacer' ></div>
       < GreetingContainer />
       <Route path="/login" component={SessionFormContainer} />
       <Route path="/signup" component={SessionFormContainer} />
