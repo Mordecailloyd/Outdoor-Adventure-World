@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import SearchContainer from '../search/search_container';
 
 class Navbar extends React.Component {
 
@@ -19,12 +18,12 @@ class Navbar extends React.Component {
           <div className="LeftNav">
             <Link to="/">
               <div id="index-route">
-                <i id="book-logo" className="fa fa-book" aria-hidden="true"></i>
-                <span id="nav-title">Outdoor-Adventure-World</span>
+                <i id="oal_logo" aria-hidden="true"></i>
+                <span id="nav-title"><img src = 'http://res.cloudinary.com/dt3tnq8um/image/upload/v1500489133/oaw_logo_heksfp.png'></img></span>
               </div>
             </Link>
             <Link to="/">
-              <span id="my-books-nav-link">stuff</span>
+              <span id="index-nav-link">stuff</span>
             </Link>
           </div>
           <div className="MiddleNav">
@@ -43,13 +42,12 @@ class Navbar extends React.Component {
           <div className="LeftNav">
             <Link to="/">
               <div id="index-route">
-                <i id="book-logo" className="fa fa-book" aria-hidden="true"></i>
-                <span id="nav-title">SuperScrolls</span>
+                <i id="oal_logo" aria-hidden="true"></i>
+                <span id="nav-title"><img src = 'http://res.cloudinary.com/dt3tnq8um/image/upload/v1500489133/oaw_logo_heksfp.png'></img></span>
               </div>
             </Link>
           </div>
           <div className="MiddleNav">
-            <SearchContainer />
           </div>
           <div className="RightNav">
             <Link to="/login">
@@ -58,7 +56,7 @@ class Navbar extends React.Component {
             <Link to="/signup">
               <button type="button" className="Signup Button">Sign Up</button>
             </Link>
-            <a href="https://github.com/Monte47/Super-Scrolls-FS" target="_blank">
+            <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
               <i className="fa fa-github" id="github-link" aria-hidden="true"></i>
             </a>
           </div>
