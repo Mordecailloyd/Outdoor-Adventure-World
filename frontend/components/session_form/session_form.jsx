@@ -30,8 +30,6 @@ class SessionForm extends React.Component {
     username: 'Nicholas',
     password: 'password'
   };
-  console.log("demo user");
-  console.log(user);
   setTimeout(() => this.props.requestLogin({user}), 2000);
 }
 
