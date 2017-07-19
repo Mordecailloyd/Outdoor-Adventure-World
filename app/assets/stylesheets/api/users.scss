@@ -1,20 +1,21 @@
 // Place all the styles related to the Api::Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.handle-submits{
-}
 .login-form-box{
   display: flex;
   flex-direction: column;
-  width: 20%;
   align-items: center;
-  justify-content: space-around;
-  margin-left: 40%;
+  justify-content: center;
   padding: 10px;
 }
 .login-form-container{
+  margin: auto;
+  width: 30%;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  opacity: .8;
+  background-color: white;
 }
 .login-form-box a{
   color: green;

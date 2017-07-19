@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, Redirect} from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -84,6 +84,9 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    if (this.props.user){
+      return(<Redirect to= "/" />);
+    }
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">

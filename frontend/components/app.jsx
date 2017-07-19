@@ -4,15 +4,18 @@ import SessionFormContainer from './session_form/session_form_container';
 import {Route, Redirect, Switch,
   Link, HashRouter } from 'react-router-dom';
 import Navbar from './navbar/navbar_container';
+import {AuthRoute} from '../util/route_util';
 
 const App = () => (
   <div>
     <div className = 'app'>
       < Navbar />
-      <div className='spacer' ></div>
-      < GreetingContainer />
-      <Route path="/login" component={SessionFormContainer} />
-      <Route path="/signup" component={SessionFormContainer} />
+      <div>
+        <div className='spacer' ></div>
+        < GreetingContainer />
+        <AuthRoute path="/login" component={SessionFormContainer} />
+        <AuthRoute path="/signup" component={SessionFormContainer} />
+      </div>
     </div>
   </div>
 );
