@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 
 
   render() {
-    const logo = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_75/v1500489133/oaw_logo_heksfp.png";
+    const logo = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_80/v1500489133/oaw_logo_heksfp.png";
     if (this.props.currentUser){
       return (
         <div className = 'navbar-container'>
