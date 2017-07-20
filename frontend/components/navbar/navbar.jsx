@@ -12,7 +12,8 @@ class Navbar extends React.Component {
 
 
   render() {
-    if(this.props.currentUser) {
+    const logo = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_75/v1500489133/oaw_logo_heksfp.png";
+    if (this.props.currentUser){
       return (
         <div className = 'navbar-container'>
           <nav className='navbar'>
@@ -20,7 +21,7 @@ class Navbar extends React.Component {
               <Link to="/">
                 <div id="index-route">
                   <i id="oal_logo" aria-hidden="true"></i>
-                  <span id="nav-title"><img src = 'http://res.cloudinary.com/dt3tnq8um/image/upload/v1500489133/oaw_logo_heksfp.png'></img></span>
+                  <span id="nav-title"><img src={logo} /></span>
                 </div>
               </Link>
               <Link to="/">
@@ -47,7 +48,7 @@ class Navbar extends React.Component {
                 <div id="index-route">
                   <i id="oal_logo" aria-hidden="true"></i>
                   <span id="nav-title">
-                    <img src = 'http://res.cloudinary.com/dt3tnq8um/image/upload/v1500489133/oaw_logo_heksfp.png' />
+                    <img src = {logo} />
                   </span>
                 </div>
               </Link>

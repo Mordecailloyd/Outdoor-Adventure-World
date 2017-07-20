@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background:rgba(255,255,255, 0.3)
 }
 .login-form-container{
   margin: auto;
@@ -14,8 +15,6 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  opacity: .8;
-  background-color: white;
 }
 .login-form-box a{
   color: green;
