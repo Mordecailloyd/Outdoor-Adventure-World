@@ -6,7 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # rake db:reset rake db:seed
-nick = User.create!(:username => "Nicholas", :password => "password")
+# nick = User.create!(:username => "Nicholas", :password => "password")
+
+Product.destroy_all
+
 fleece = Product.create!(:title => "Momentum Full-Zip Fleece Jacket", :body =>
 "Layer up for your early-morning approaches with The North Face Momentum
 full-zip fleece jacket. It offers just the right amount of warmth and protection
