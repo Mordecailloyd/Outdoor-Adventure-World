@@ -1,5 +1,6 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
+import Home from './home/home_container';
 import SessionFormContainer from './session_form/session_form_container';
 import {Route, Redirect, Switch,
   Link, HashRouter } from 'react-router-dom';
@@ -12,7 +13,8 @@ const App = () => (
       < Navbar />
       <div>
         <div className='spacer' ></div>
-        < GreetingContainer />
+        <Home />
+        <GreetingContainer />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </div>

@@ -16,12 +16,12 @@ export const receiveProduct = product => ({
 
 export const requestProducts = () => dispatch => (
   ProductUtil.fetchProducts().then(
-    products => dispatch(receiveProducts())
+    products => dispatch(receiveProducts(products))
   )
 );
 
 export const requestProduct = (id) => dispatch =>(
   ProductUtil.fetchProduct(id).then(
-    product => dispatch(receiveProduct())
+    product => dispatch(receiveProduct(product))
   )
 );

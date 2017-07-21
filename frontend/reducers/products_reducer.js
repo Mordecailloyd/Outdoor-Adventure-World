@@ -2,20 +2,29 @@ import {merge} from "lodash";
 import {RECEIVE_PRODUCT, RECEIVE_PRODUCTS} from "../actions/product_actions";
 
 
-const nullProduct = {
-  currentProduct: null
+const nullState = {
+  selectedProduct: {
+    title: '',
+    body: ''
+  },
+  allProducts: {
+    0: {
+      title: '',
+      body: ''
+    }
+  }
 };
 
-const productReducer = (state = nullProduct, action) => {
+const productReducer = (state = nullState, action) => {
   console.log('product reducer hit');
   console.log('action',action);
   Object.freeze(state);
-  let newState = merge({}, nullProduct);
+  let newState = merge({}, nullState);
   switch(action.type){
     case RECEIVE_PRODUCT:
-      return action.product;
+      return Object.assign(newState,{selectedProduct: action.product});
     case RECEIVE_PRODUCTS:
-      return action.products;
+      return Object.assign(newState,{allProducts: action.products});
     default:
       return state;
   }

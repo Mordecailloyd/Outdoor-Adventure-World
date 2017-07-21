@@ -1,7 +1,9 @@
 class Api::MessagesController < ApplicationController
-  before_action :require_logged_in
+  before_action :require_logged_in, except: [:index]
 
-
+  def index
+    @messages=Message.where(product_id: params[:product_id])
+  end
 
   def create
     if !(Message.where(product_id: message_params[:product_id], author_id: current_user.id).empty?)
