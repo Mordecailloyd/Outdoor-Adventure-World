@@ -1,8 +1,8 @@
 class Message < ApplicationRecord
-  belongs_to: :user
+  belongs_to: :author, class_name: :User
   belongs_to: :product
 
-  validates :author_id, :product_id, :rating, :title, :body, presence: true
-  validates :user_id, uniqueness: {scope: :product_id}
+  validates :author, :product, :rating, :title, :body, presence: true
+  validates :author, uniqueness: {scope: :product}
 
 end

@@ -31,7 +31,7 @@ class Navbar extends React.Component {
             <div className="MiddleNav">
             </div>
             <div className="RightNav">
-              <button onClick={this.handleLogout.bind(this)} type="button" className="logout-button">Logout</button>
+              <button onClick={this.handleLogout.bind(this)} type="button" className="session-button">Logout</button>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
                 <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
               </a>
@@ -56,11 +56,11 @@ class Navbar extends React.Component {
             <div className="MiddleNav">
             </div>
             <div className="RightNav">
-              <Link to="/login">
-                <button type="button" className='login-button'>Login</button>
+              <Link to="/login" className='session-button'>
+                Login
               </Link>
-              <Link to="/signup">
-                <button type="button" className="signup-button">Sign Up</button>
+              <Link to="/signup" className="session-button">
+                Sign Up
               </Link>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
                 <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />

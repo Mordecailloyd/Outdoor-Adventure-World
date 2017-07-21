@@ -8,8 +8,6 @@ class Api::ProductsController < ApplicationController
     @messages=@product.messages
   end
 
-
-
   private
   def product_params
     params
