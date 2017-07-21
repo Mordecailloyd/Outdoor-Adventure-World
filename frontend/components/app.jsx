@@ -13,8 +13,8 @@ const App = () => (
       < Navbar />
       <div>
         <div className='spacer' ></div>
-        <Home />
         <GreetingContainer />
+        <Home />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </div>
