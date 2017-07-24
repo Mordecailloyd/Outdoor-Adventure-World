@@ -8,17 +8,13 @@ import values from 'lodash/values';
 
 
 const mapStateToProps = ( state ) => {
-  const params = Object.keys(state.products.allProducts).map(product => (
-      state.products.allProducts[product]
-  ));
   return {
-    allProducts: params,
     selectedProduct: state.products.selectedProduct
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  requestProduct: () => dispatch(requestProduct())
+  requestProduct: (id) => dispatch(requestProduct(id))
 });
 
 export default withRouter(connect(

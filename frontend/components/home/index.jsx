@@ -7,9 +7,9 @@ class Index extends React.Component {
     };
   }
 
-  componentDidMount(){
-    this.props.products();
-  }
+  // componentDidMount(){
+  //   this.props.products();
+  // }
   render() {
     const productItems = this.props.allProducts.map(product => {
       const productId = product.id;

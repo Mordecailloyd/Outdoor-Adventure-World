@@ -7,14 +7,13 @@ class Show extends React.Component {
     super(props);
     this.newstate = {
     };
-    console.log('props',this.props);
   }
 
   componentDidMount(){
-    debugger
     //this.props.id ?
-    this.props.requestProduct('1');
-    console.log('next props', this.props);
+    this.props.requestProduct(1).then (() => {
+      console.log(this.props);
+    });
   }
   render() {
     return (

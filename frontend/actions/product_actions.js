@@ -20,8 +20,9 @@ export const requestProducts = () => dispatch => (
   )
 );
 
-export const requestProduct = (id) => dispatch =>(
+export const requestProduct = (id) => dispatch =>{
+  return  (
   ProductUtil.fetchProduct(id).then(
     product => dispatch(receiveProduct(product))
-  )
-);
+  ));
+};
