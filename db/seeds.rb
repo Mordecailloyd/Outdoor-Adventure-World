@@ -78,7 +78,7 @@ tent1 = Product.create!(:brand => 'Big Agnes', :price => 449.95, :title => 'Big 
 tent2 = Product.create!(:brand => 'Nemo', :price => 499.95 , :title => 'NEMO Dagger 3P Tent',
 :body => 'The 3-person, 3-season Dagger from NEMO offers you the best of both worlds: a tent light enough for ultralight backpacking, yet roomy enough to wait out a rainstorm without feeling claustrophobic.',
 :image_url => 'https://www.rei.com/media/6f12e9df-d964-447f-9774-c3c6fcbc42d3?size=1020x510')
-bike_helmet5 = Product.create!(:brand => '', :price => , :title => '',
+tent3 = Product.create!(:brand => '', :price => , :title => '',
 :body => '',
 :image_url => '')
 

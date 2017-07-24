@@ -11,10 +11,6 @@ const mapStateToProps = ( state ) => {
   const params = Object.keys(state.products.allProducts).map(product => (
       state.products.allProducts[product]
   ));
-  console.log('state',state);
-  console.log('params',params);
-  console.log('values',values);
-  console.log('this.products in container', state.products.allProducts);
   return {
     allProducts: params,
     product: state.products.selectedProduct

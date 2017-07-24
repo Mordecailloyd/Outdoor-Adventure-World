@@ -16,8 +16,6 @@ const nullState = {
 };
 
 const productReducer = (state = nullState, action) => {
-  console.log('product reducer hit');
-  console.log('action',action);
   Object.freeze(state);
   let newState = merge({}, nullState);
   switch(action.type){

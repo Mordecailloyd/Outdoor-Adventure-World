@@ -18,7 +18,7 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  product: () => dispatch(requestProduct())
+  requestProduct: () => dispatch(requestProduct())
 });
 
 export default withRouter(connect(

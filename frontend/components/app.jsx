@@ -11,12 +11,11 @@ import {AuthRoute} from '../util/route_util';
 const App = () => (
   <div>
     <div className = 'app'>
-      < Navbar />
+      <Navbar />
       <div>
         <div className='spacer' ></div>
         <GreetingContainer />
-        <Home />
-        <Show />
+        <Route path = "/products/1" component={Show}>Products 1</Route>
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </div>

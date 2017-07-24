@@ -12,7 +12,6 @@ class Home extends React.Component {
     this.props.products();
   }
   render() {
-    console.log('allproducts',this.props.allProducts);
     const productItems = this.props.allProducts.map(product => {
       const productId = product.id;
       return (
