@@ -17,18 +17,25 @@ class Show extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className = 'show-img'>
-          <h1>test render show img</h1>
-          <span><img src= {this.props.selectedProduct.image_url} /></span>
+      <div className = "show-page">
+        <div className = 'img-and-checkout'>
+          <div className = 'show-img'>
+            <div className = 'img-info'>
+              <p className = 'img-title'>{this.props.selectedProduct.title}</p>
+            </div>
+            <p className = "show-img-container"><img src= {this.props.selectedProduct.image_url} /></p>
+          </div>
+          <div className = "checkout">
+            <p className = 'img-price'>${this.props.selectedProduct.price}</p>
+          </div>
         </div>
         <div className = 'show-description'>
           <div className = 'product-info'>
-            <span className="product-brand">{this.props.selectedProduct.brand}</span>
-            <span className="product-title">{this.props.selectedProduct.title}</span>
-            <span className="product-price">{this.props.selectedProduct.price}</span>
+            <p className="product-brand">{this.props.selectedProduct.brand}</p>
+            <p className="product-title">{this.props.selectedProduct.title}</p>
+            <p className="product-price">${this.props.selectedProduct.price}</p>
 
-            <span className="product-body">{this.props.selectedProduct.body}</span>
+            <p className="product-body">{this.props.selectedProduct.body}</p>
 
           </div>
           <div className = 'product-features'>
