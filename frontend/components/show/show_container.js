@@ -7,7 +7,7 @@ import values from 'lodash/values';
 
 
 
-const mapStateToProps = ( state ) => {
+const mapStateToProps = ( state) => {
   return {
     selectedProduct: state.products.selectedProduct
   };

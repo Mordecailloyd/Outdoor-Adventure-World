@@ -6,16 +6,26 @@ class Show extends React.Component {
   constructor(props) {
     super(props);
     this.newstate = {
+
     };
   }
 
   componentDidMount(){
+      const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
-    this.props.requestProduct(1).then (() => {
+    this.props.requestProduct(productId).then (() => {
       console.log(this.props);
     });
   }
   render() {
+    const featuresList = this.props.selectedProduct.features.map(feature => {
+      return (
+        <li key={feature} >
+          {feature}
+        </li>
+      );}
+    );
+
     return (
       <div className = "show-page">
         <div className = 'img-and-checkout'>
@@ -27,18 +37,20 @@ class Show extends React.Component {
           </div>
           <div className = "checkout">
             <p className = 'img-price'>${this.props.selectedProduct.price}</p>
+            <p><input href="#" className="btn btn-success"
+              type="submit" value="Add To Cart" /></p>
           </div>
         </div>
         <div className = 'show-description'>
           <div className = 'product-info'>
-            <p className="product-brand">{this.props.selectedProduct.brand}</p>
-            <p className="product-title">{this.props.selectedProduct.title}</p>
-            <p className="product-price">${this.props.selectedProduct.price}</p>
-
             <p className="product-body">{this.props.selectedProduct.body}</p>
 
           </div>
           <div className = 'product-features'>
+            <ul>
+              <h3>Features:</h3>
+              {featuresList}
+            </ul>
 
           </div>
         </div>
@@ -50,4 +62,4 @@ class Show extends React.Component {
   }
 }
 
-export default Show;
+export default withRouter (Show);
