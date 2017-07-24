@@ -8,15 +8,16 @@ class Home extends React.Component {
     };
   }
 
-  // componentDidMount(){
-  //   this.props.products();
-  // }
+  componentDidMount(){
+    this.props.products();
+  }
   render() {
     const productItems = this.props.allProducts.map(product => {
       const productId = product.id;
       return (
         <li>
           <p>{product.title}</p>
+          <Link to={`/products/${productId}`} >Product Show Page.</Link>
         </li>
       );}
     );
