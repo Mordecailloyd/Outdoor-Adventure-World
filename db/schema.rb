@@ -28,14 +28,14 @@ ActiveRecord::Schema.define(version: 20170724161621) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string   "title",      null: false
-    t.text     "body",       null: false
-    t.string   "image_url",  null: false
-    t.decimal  "price",      null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "brand",      null: false
-    t.text     "features"
+    t.string   "title",                   null: false
+    t.text     "body",                    null: false
+    t.string   "image_url",               null: false
+    t.decimal  "price",                   null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "brand",                   null: false
+    t.string   "features",   default: [],              array: true
     t.index ["price"], name: "index_products_on_price", using: :btree
     t.index ["title"], name: "index_products_on_title", unique: true, using: :btree
   end
