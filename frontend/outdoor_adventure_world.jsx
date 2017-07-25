@@ -4,7 +4,6 @@ import configureStore from './store/store';
 import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded',()=>{
-  console.log('you hit the hook');
   let store;
 
   if (window.currentUser) {

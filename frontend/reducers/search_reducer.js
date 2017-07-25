@@ -6,7 +6,6 @@ const defaultState = {
 };
 
 const SearchReducer = (state = defaultState, action) => {
-  console.log('action',action);
   Object.freeze(state);
   switch(action.type) {
     case SEARCH_RESULTS:

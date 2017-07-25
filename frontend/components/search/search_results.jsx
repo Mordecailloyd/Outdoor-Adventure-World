@@ -10,7 +10,6 @@ const SearchResults = ({shown, results}) => {
     const names = Object.keys(results).map(id => <Link to={"/products/"+ id}>
     <li className="search-result-item" >{results[id].title}</li></Link>);
 
-    console.log("names",names);
     return (
       <ul className="search-results">
         {names}

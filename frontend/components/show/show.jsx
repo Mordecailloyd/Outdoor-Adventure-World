@@ -15,7 +15,7 @@ class Show extends React.Component {
     const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
     this.props.requestProduct(productId).then (() => {
-      console.log(this.props);
+      
     });
   }
 
@@ -23,7 +23,6 @@ class Show extends React.Component {
       const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
     this.props.requestProduct(productId).then (() => {
-      console.log(this.props);
     });
   }
   render() {
