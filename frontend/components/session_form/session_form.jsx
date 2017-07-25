@@ -89,36 +89,38 @@ class SessionForm extends React.Component {
     }
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          <br/>
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors() }
-          <div className="login-form">
+        <div>
+          <form onSubmit={this.handleSubmit} className="login-form-box">
             <br/>
-            <label>Username:
-              <input type="text"
-                value={this.state.username}
-                onChange={this.changeUserName}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Password :
-              <input type="password"
-                value={this.state.password}
-                onChange={this.changePassword}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <div className = "handle-submits">
-              <input href="#" className="btn btn-success"
-                type="submit" value="Submit" />
-              <button href="#" className="btn btn-info" type='submit'
-                onClick={this.handleDemo}>Demo Log-in</button>
+            Please {this.props.formType} or {this.navLink()}
+            {this.renderErrors() }
+            <div className="login-form">
+              <br/>
+              <label>Username:
+                <input type="text"
+                  value={this.state.username}
+                  onChange={this.changeUserName}
+                  className="login-input"
+                />
+              </label>
+              <br/>
+              <label>Password :
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.changePassword}
+                  className="login-input"
+                />
+              </label>
+              <br/>
+              <div className = "handle-submits">
+                <input href="#" className="btn btn-success"
+                  type="submit" value="Submit" />
+                <button href="#" className="btn btn-info" type='submit'
+                  onClick={this.handleDemo}>Demo Log-in</button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     );
   }
