@@ -13,6 +13,7 @@ const App = () => (
   <div>
     <div className = 'app'>
       <Navbar />
+
       <div>
         <div className='spacer' ></div>
         <Route exact path= "/" component={Home}> </Route>

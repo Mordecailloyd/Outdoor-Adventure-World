@@ -176,7 +176,7 @@ bike_helmet2 = Product.create!(:brand => 'Smith', :price => 280.00 , :title => '
 
 bike_helmet3 = Product.create!(:brand => 'Bell', :price => 150.00, :title => "Bell Stratus MIPS Bike Helmet - Men's",
 :body => 'With a great combo of minimal weight, aero efficiency and cutting-edge comfort technologies, the Bell Stratus MIPS road helmet for men will help you climb, sprint, or ride from dawn until dusk.',
-:image_url => 'http://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_350/v1500941653/fc5979a8-a0a1-4a65-b97f-b10cc45b444e_xknd4d.jpg',
+:image_url => 'http://res.cloudinary.com/dt3tnq8um/image/upload/c_fit,h_350,w_400/v1500941653/fc5979a8-a0a1-4a65-b97f-b10cc45b444e_xknd4d.jpg',
 :features => ["A direct descendent of the pro-level Zephyr, it brings that level of advanced engineering and design to this model",
 "While most helmets protect only against direct impact, MIPS technology reduces rotational forces when the helmet gets hit at an angle",
 "Float Fit technology lets you adjust the circumference and vertical positioning on your head for a perfect fit; rubber-coated dial is easy to adjust on the fly",

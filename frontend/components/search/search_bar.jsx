@@ -13,6 +13,7 @@ class SearchBar extends React.Component {
   }
 
   show() {
+    debugger;
     return (
     Object.keys(this.props.searchResults).length === 0 || this.state.query === "" ? false : true
     );
