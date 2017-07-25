@@ -14,11 +14,11 @@ export const fetchProduct = (id) => {
   }));
 };
 
-export const searchProducts = (query, success) => {
+export const searchProducts = (query) => {
+  return (
   $.ajax({
     method: 'GET',
     url: '/api/products',
-    data: {query},
-    success
-  });
+    data: {query}
+  }));
 };

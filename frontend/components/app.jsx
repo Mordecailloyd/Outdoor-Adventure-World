@@ -13,9 +13,9 @@ const App = () => (
   <div>
     <div className = 'app'>
       <Navbar />
-
       <div>
         <div className='spacer' ></div>
+        <SearchBarContainer />
         <Route exact path= "/" component={Home}> </Route>
         <Route path = "/products/:productId" component={ShowContainer}> </Route>
         <AuthRoute path="/login" component={SessionFormContainer} />

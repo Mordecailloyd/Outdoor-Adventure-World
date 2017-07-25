@@ -6,14 +6,13 @@ const defaultState = {
 };
 
 const SearchReducer = (state = defaultState, action) => {
-  
-  debugger
+  console.log('action',action);
   Object.freeze(state);
   switch(action.type) {
     case SEARCH_RESULTS:
-      return action.products;
+      return {searchResults: action.products};
     case CLEAR_SEARCH:
-      return {};
+      return defaultState;
     default:
       return state;
   }

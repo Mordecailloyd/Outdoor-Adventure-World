@@ -10,12 +10,14 @@ class SearchBar extends React.Component {
       resultsShown: false
     };
     this.exitSearchBar = this.exitSearchBar.bind(this);
+    this.show=this.show.bind(this);
   }
 
   show() {
-    debugger;
+
     return (
-    Object.keys(this.props.searchResults).length === 0 || this.state.query === "" ? false : true
+    ( Object.keys(this.props.searchResults).length === 0 || this.state.query === "" )
+    ?  false : true
     );
   }
 
@@ -39,7 +41,8 @@ class SearchBar extends React.Component {
   render () {
     return (
       <ul className="search-container">
-        <li><input
+        <li>
+          <input
           className="search-bar-input"
           type="text"
           placeholder="Search for items"

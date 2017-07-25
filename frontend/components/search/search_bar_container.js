@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
-import { searchProducts, clearSearch } from '../../actions/search_actions';
+import { requestSearchProducts, clearSearch } from '../../actions/search_actions';
 import SearchBar from './search_bar';
 
-const mapStateToProps = ({ searchResults }) => ({
-  searchResults
+const mapStateToProps = (state) => ({
+  searchResults: state.search.searchResults
 });
 
 const mapDispatchToProps = dispatch => ({
   clearSearch: () => dispatch(clearSearch()),
-  searchProducts: (query) => dispatch(searchProducts(query))
+  searchProducts: (query) => dispatch(requestSearchProducts(query))
 });
 
 export default connect(

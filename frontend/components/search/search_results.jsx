@@ -1,14 +1,20 @@
 
 import React from 'react';
-import { Link, withRouter } from 'react-router';
+import { Link, withRouter } from 'react-router-dom';
 
 
 const SearchResults = ({shown, results}) => {
   if (shown) {
-    let names = Object.keys(results).map(id => <Link key={id} to={"/product/"+ id}>
-    <li className="search-result-item" >{results[id].name}</li></Link>);
+
+
+    const names = Object.keys(results).map(id => <Link to={"/products/"+ id}>
+    <li className="search-result-item" >{results[id].title}</li></Link>);
+
+    console.log("names",names);
     return (
-      <ul className="search-results">{names}</ul>
+      <ul className="search-results">
+        {names}
+      </ul>
     );
   }
   else {
@@ -17,4 +23,4 @@ const SearchResults = ({shown, results}) => {
 };
 
 
-export default withRouter (SearchResults);
+export default SearchResults;

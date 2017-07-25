@@ -25,7 +25,7 @@ export const searchResults = (products) => ({
   products
 });
 
-export const requestSearchProducts = (query) =>dispatch => {
+export const requestSearchProducts = (query) => dispatch => {
   return (
     ProductUtil.searchProducts(query).then(
       products => dispatch(searchResults(products))

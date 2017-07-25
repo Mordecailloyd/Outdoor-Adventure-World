@@ -5,7 +5,7 @@ for testing and routing for messages of a given product
 
 
 
-
+onBlur={this.exitSearchBar}
 
 import React from 'react';
 import { withRouter, Link } from 'react-router';

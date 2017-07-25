@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { requestProducts } from '../../actions/product_actions';
-import Home from './home';
+import Home from './index';
 import { withRouter } from 'react-router';
 import values from 'lodash/values';
 

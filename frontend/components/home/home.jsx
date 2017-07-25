@@ -17,7 +17,8 @@ class Home extends React.Component {
       const productId = product.id;
       return (
         <li key={`${productId}`} className = 'product-item' >
-          <p>{product.title}</p>
+          <h4>{product.title}</h4>
+
           <Link to={`/products/${productId}`} >
             <img className="product-item-img" src={product.image_url}></img></Link>
 
