@@ -10,6 +10,10 @@ class Show extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps){
+    //check if location has changed - call fetchProduct by id if so
+  }
+
   componentDidMount(){
       const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
@@ -61,5 +65,5 @@ class Show extends React.Component {
     );
   }
 }
-
+// test removing withRouter
 export default withRouter (Show);

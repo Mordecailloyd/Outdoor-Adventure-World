@@ -11,13 +11,15 @@ class Home extends React.Component {
   componentDidMount(){
     this.props.products();
   }
+
   render() {
     const productItems = this.props.allProducts.map(product => {
       const productId = product.id;
       return (
-        <li>
+        <li key={`${productId}`} >
           <p>{product.title}</p>
           <Link to={`/products/${productId}`} >Product Show Page.</Link>
+          <img src={product.image_url}></img>
         </li>
       );}
     );
