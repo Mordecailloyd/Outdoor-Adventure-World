@@ -27,7 +27,7 @@ class Home extends React.Component {
     );
     return (
       <div className= 'product-items'>
-        <h1>test render home</h1>
+        <h1></h1>
         <div className = "splash">
           <Link to = "/">
           </Link>
