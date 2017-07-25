@@ -281,15 +281,7 @@ tent5 = Product.create!(:brand => 'Tepui Tents', :price => 2250.00, :title => 'T
 "The toughest Tepui rooftop tent on the market, the Kukenam XL Ruggedized SKY 4 is perfect for 4x4 trailers and off-road rigs"
 ])
 
-tent6 = Product.create!(:brand => '', :price => 11, :title => '',
-:body => '',
-:image_url => '',
-:features => [])
 
-tent7 = Product.create!(:brand => '', :price => 10, :title => '',
-:body => '',
-:image_url => '',
-:features => [])
 
 nick = User.create!(:username => "Nicholas", :password => "password")
 
