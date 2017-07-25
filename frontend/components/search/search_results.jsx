@@ -10,7 +10,8 @@ const SearchResults = ({shown, results}) => {
     return (
       <ul className="search-results">{names}</ul>
     );
-  } else {
+  }
+  else {
   return  null;
   }
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import Home from './home/home_container';
 import ShowContainer from './show/show_container';
+import SearchBarContainer from './search/search_bar_container';
 import SessionFormContainer from './session_form/session_form_container';
 import {Route, Redirect, Switch,
   Link, HashRouter } from 'react-router-dom';
