@@ -33,7 +33,7 @@ class Home extends React.Component {
           </Link>
           <img src = "http://res.cloudinary.com/dt3tnq8um/image/upload/q_auto:low/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
         </div>
-        <div>
+
           <div className = "sample-product">
             <link to = "/">
             </link>
@@ -44,7 +44,7 @@ class Home extends React.Component {
             </Link>
             <img src="http://res.cloudinary.com/dt3tnq8um/image/upload/q_auto:low/v1500915526/rob-bye-125311_yvj1nw.jpg" />
           </div>
-        </div>
+
         <div className = "footer">
           <ul className='product-items'>
             {productItems}
