@@ -46,7 +46,7 @@ class SearchBar extends React.Component {
           className="search-bar-input"
           type="text"
           placeholder="Search for items"
-          onBlur={this.exitSearchBar}
+
           value={this.state.query}
           onChange={this.update("query")}>
         </input></li>
