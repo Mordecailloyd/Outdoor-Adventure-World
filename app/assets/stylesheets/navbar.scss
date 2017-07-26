@@ -1,3 +1,20 @@
+.LeftNav {
+  padding: 10px;
+}
+
+
+.MiddleNav{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: center;
+
+
+}
 
 .RightNav{
   display: -webkit-flex;
@@ -16,6 +33,12 @@
   background-color: inherit;
   font-family: 'Pacifico', cursive;
   height: auto;
+
+}
+.session-button:hover{
+  text-decoration: none;
+  text-decoration-style: none;
+  color: inherit;
 }
 .navbar{
   display: flex;
@@ -31,9 +54,6 @@
   height: 100px;
 }
 
-.LeftNav {
-  padding: 10px;
-}
 
 .app{
   // height: 1000px;
@@ -58,7 +78,7 @@
 .search-results {
     padding: 0px;
     position: absolute;
-    background: white;
+    background: rgba(229, 229, 229, .8);
     border: 1px solid whitesmoke;
     list-style-type: none;
     z-index: 2;
@@ -75,6 +95,7 @@
     max-width: 400px;
     padding: 8px 8px 8px 10px;
     &:hover {
-    background: #F5FFFA;
+      background: rgba(219, 255, 237, 1);
+      style: none;
     }
   }

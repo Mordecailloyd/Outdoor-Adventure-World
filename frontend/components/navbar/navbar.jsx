@@ -56,6 +56,7 @@ class Navbar extends React.Component {
               </Link>
             </div>
             <div className="MiddleNav">
+              <SearchBarContainer />
             </div>
             <div className="RightNav">
               <Link to="/login" className='session-button'>
