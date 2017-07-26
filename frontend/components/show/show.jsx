@@ -11,20 +11,19 @@ class Show extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-
     //check if location has changed - call fetchProduct by id if so
     const productId = parseInt(this.props.match.params.productId);
-    if (productId !== nextProps.match.params.productId){
+    if (productId !==  parseInt(nextProps.match.params.productId)){
+
       //this.props.id ?
-      this.props.requestProduct(productId);
+      this.props.requestProduct(nextProps.match.params.productId);
     }
   }
 
   componentDidMount(){
-      const productId = parseInt(this.props.match.params.productId);
+    const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
-    this.props.requestProduct(productId).then (() => {
-    });
+    this.props.requestProduct(productId);
   }
   render() {
     const featuresList = this.props.selectedProduct.features.map(feature => {
@@ -71,4 +70,4 @@ class Show extends React.Component {
   }
 }
 // test removing withRouter
-export default withRouter (Show);
+export default Show;

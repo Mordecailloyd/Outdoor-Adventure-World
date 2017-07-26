@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { requestProduct } from '../../actions/product_actions';
 import Show from './show';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 import values from 'lodash/values';
 
 
