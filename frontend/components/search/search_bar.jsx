@@ -7,10 +7,13 @@ class SearchBar extends React.Component {
     super(props);
     this.state = {
       query: "",
-      resultsShown: false
+      resultsShown: false,
+      visibility: 'hide'
     };
     this.exitSearchBar = this.exitSearchBar.bind(this);
     this.show=this.show.bind(this);
+    this.update=this.update.bind(this);
+    this.hide=this.hide.bind(this);
   }
 
   show() {
@@ -21,14 +24,27 @@ class SearchBar extends React.Component {
     );
   }
 
+
+  hide() {
+    setTimeout(() => {
+      this.setState({visibility: 'hide'});
+    },300);
+  }
+
   update(field) {
-    return (e) => this.setState({
+    return (e) => {
+
+      this.setState({
       [field]: e.currentTarget.value}, () => {
         if (this.state.query !== "") {
           this.props.clearSearch();
           this.props.searchProducts(this.state.query);
         }
       });
+      this.setState({visibility: 'show'});
+    };
+
+
   }
   exitSearchBar() {
     setTimeout(() => {
@@ -46,12 +62,13 @@ class SearchBar extends React.Component {
           className="search-bar-input"
           type="text"
           placeholder="Search for items"
-
+          onBlur={this.hide}
           value={this.state.query}
           onChange={this.update("query")}>
         </input></li>
           <SearchResults
             shown={this.show()}
+            visibility = {this.state.visibility}
             results={this.props.searchResults}
           />
       </ul>
