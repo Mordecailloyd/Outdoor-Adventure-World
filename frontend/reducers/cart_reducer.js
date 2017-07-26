@@ -3,13 +3,11 @@ import {RECEIVE_CART_ITEM, REMOVE_CART_ITEM, RECEIVE_CART, CLEAR_CART
 
 import merge from 'lodash/merge';
 
-const defaultCart = {
-};
+const defaultCart = [];
 
 const cartReducer = (state = defaultCart, action) => {
   Object.freeze(state);
-  let newState = {
-  };
+  let newState = [];
   switch (action.type) {
     case RECEIVE_CART:
     //

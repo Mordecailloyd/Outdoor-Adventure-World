@@ -5,8 +5,9 @@ class Api::CartsController < ApplicationController
     newcart.buyer_id = current_user.id
     if newcart.save
       @cart = current_user.cart_items
-      render :show
+      render :index
     else
+      @cart = newcart
       render json: @cart.errors.full_messages, status: 422
     end
   end
@@ -22,6 +23,7 @@ class Api::CartsController < ApplicationController
 
   def destroy_all
     current_user.cart_items.each(&:destroy)
+    head :no_content
   end
 
   def destroy
@@ -36,3 +38,4 @@ class Api::CartsController < ApplicationController
     params.require(:cart).permit(:productId)
   end
 end
+# productId naming convention for sending ajax request is critical.

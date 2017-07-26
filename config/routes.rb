@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :messages, only: [:create, :destroy, :update, :index]
     resources :products, only: [:index, :show]
     resources :carts, only: [:create, :index, :destroy, :show]
+    delete "/user/cart/", to: "carts#destroy_all"
   end
   root "static_pages#root"
 end
