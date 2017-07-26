@@ -2,7 +2,7 @@ class Api::ProductsController < ApplicationController
   def index
     @products = Product.all
     if params[:query]
-      @products = @products.where("title LIKE :query1 OR title LIKE :query2", query1: "#{params[:query]}%", query2: "% #{params[:query]}%")
+      @products = @products.where("lower(title) LIKE :query1 OR lower(title) LIKE :query2", query1: "#{params[:query]}%", query2: "% #{params[:query]}%").limit(8)
       render :search_results
     else
       render :index

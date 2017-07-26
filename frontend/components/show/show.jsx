@@ -11,12 +11,13 @@ class Show extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
+
     //check if location has changed - call fetchProduct by id if so
-    const productId = parseInt(this.props.match.params.productId);
-    //this.props.id ?
-    this.props.requestProduct(productId).then (() => {
-      
-    });
+    if (this.props.match.params.productId !== nextProps.match.params.productId){
+      const productId = parseInt(this.props.match.params.productId);
+      //this.props.id ?
+      this.props.requestProduct(productId);
+    }
   }
 
   componentDidMount(){

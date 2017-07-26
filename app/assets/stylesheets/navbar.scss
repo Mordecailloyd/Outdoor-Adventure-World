@@ -50,6 +50,31 @@
 .hide{
   visibility: hidden;
 }
+
 .show{
   visibility: visible;
 }
+
+.search-results {
+    padding: 0px;
+    position: absolute;
+    background: white;
+    border: 1px solid whitesmoke;
+    list-style-type: none;
+    z-index: 2;
+    border-radius: 5px;
+  }
+
+  .search-result-item {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px solid whitesmoke;
+    max-width: 400px;
+    padding: 8px 8px 8px 10px;
+    &:hover {
+    background: #F5FFFA;
+    }
+  }
