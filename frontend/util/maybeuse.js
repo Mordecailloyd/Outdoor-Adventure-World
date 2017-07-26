@@ -2,7 +2,39 @@ http://localhost:3000/api/messages/?product_id=1
 
 for testing and routing for messages of a given product
 
+switch (action.type) {
+  case REQUEST_CART:
+    requestCart(receiveCartSuccess);
+    return next(action);
+  case ADD_CART_ITEM:
+    addCartItem(action.id, receiveCartItemSuccess);
+    return next(action);
+  case DESTROY_CART_ITEM:
+    destroyCartItem(action.id, destroyCartItemSuccess);
+    return next(action);
+  default:
+    return next(action);
+}
+};
 
+export default CartMiddleware;
+export const destroyCartItem = (id) => ({
+  type: DESTROY_CART_ITEM,
+  id
+});
+
+
+
+
+// case RECEIVE_CART_ITEM:
+//   newState = merge({}, state);
+//   let newCartItem = action.cartItem;
+//   return merge(newState, {[newCartItem.id]:
+//   newCartItem});
+// case REMOVE_CART_ITEM:
+//   newState = merge({}, state);
+//   // delete newState[action.cartItem.id];
+//   return newState;
 
 
 onBlur={this.exitSearchBar}
