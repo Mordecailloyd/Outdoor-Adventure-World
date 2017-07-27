@@ -10,7 +10,6 @@ class CartIcon extends React.Component {
   }
 
   componentWillMount() {
-    debugger
     this.props.requestCart();
   }
 
