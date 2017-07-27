@@ -9,7 +9,9 @@ import {requestAddCartItem} from '../../actions/cart_actions';
 
 const mapStateToProps = ( state) => {
   return {
-    selectedProduct: state.products.selectedProduct
+    selectedProduct: state.products.selectedProduct,
+    messages: values(state.products.messages)
+
   };
 };
 

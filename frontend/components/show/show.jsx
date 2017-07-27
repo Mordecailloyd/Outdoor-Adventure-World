@@ -8,6 +8,7 @@ class Show extends React.Component {
     this.newstate = {
 
     };
+    this.handleAddToCart = this.handleAddToCart.bind(this);
   }
 
   componentWillReceiveProps(nextProps){
@@ -26,6 +27,7 @@ class Show extends React.Component {
     //this.props.id ?
     this.props.requestProduct(productId);
     this.props.requestAllMessages(productId);
+    debugger
   }
 
 
@@ -39,7 +41,8 @@ class Show extends React.Component {
 
 
   render() {
-    debugger
+    console.log('props',this.props);
+
     const featuresList = this.props.selectedProduct.features.map(feature => {
       return (
         <li key={feature} >
@@ -59,8 +62,8 @@ class Show extends React.Component {
           </div>
           <div className = "checkout">
             <p className = 'img-price'>${this.props.selectedProduct.price}</p>
-            <p><input href="#" className="btn btn-success"
-              type="submit" value="Add To Cart" /></p>
+            <p><button className="btn btn-success"
+              type="submit" value="Add To Cart" onClick={this.handleAddToCart} /></p>
           </div>
         </div>
         <div className = 'show-description'>
@@ -77,7 +80,9 @@ class Show extends React.Component {
           </div>
         </div>
         <div className = 'show-messages'>
-          <messages />
+          <p>{this.props.messages.map(
+              message=> message.title
+            )}</p>
         </div>
       </div>
     );

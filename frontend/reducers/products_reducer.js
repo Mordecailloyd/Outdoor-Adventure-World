@@ -2,6 +2,7 @@ import {merge} from "lodash";
 import {RECEIVE_PRODUCT, RECEIVE_PRODUCTS} from "../actions/product_actions";
 import {RECEIVE_ALL_MESSAGES} from "../actions/message_actions";
 
+
 const nullState = {
   selectedProduct: {
     title: '',
@@ -24,7 +25,7 @@ const nullState = {
 
 const productReducer = (state = nullState, action) => {
   Object.freeze(state);
-  let newState = merge({}, state);
+  let newState = Object.assign({}, state);
   switch(action.type){
     case RECEIVE_PRODUCT:
       return Object.assign(newState,{selectedProduct: action.product});
