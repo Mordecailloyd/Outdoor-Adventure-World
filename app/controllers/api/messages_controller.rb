@@ -14,7 +14,7 @@ class Api::MessagesController < ApplicationController
       @message.author_id = current_user.id
 
       if @message.save
-        render "api/messages/message"
+        render :show
       else
         render json: {errors: @message.errors.full_messages }, status: 422
       end

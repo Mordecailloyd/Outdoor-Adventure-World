@@ -12,12 +12,12 @@ class Cart extends React.Component {
     this.props.requestCart();
   }
 
-  cartItem(product) {
+  cartItem(product,idx) {
 
 
       const destroyItem = () => this.props.requestDestroyCartItem(product.id);
       return (
-        <div className="cart-item">
+        <div className="cart-item" key = {idx}>
           <div className="cart-item-image">
             <img src={product.image_url}/>
           </div>
@@ -40,10 +40,12 @@ class Cart extends React.Component {
 
   render () {
     let explanation = () => (alert("This is where I would request credit card info. As this is a demo site it does nothing."));
-
-    // let subtotal = (this.props.cart.map(product => product.price).reduce((a, b) => a + b, 0)).toFixed(2);
-    debugger
-    let subtotal = 1;
+    let subtotal;
+    if (this.props.cart.length){
+      subtotal = (this.props.cart.map(product => product.price).reduce((a, b) => parseFloat(a) + parseFloat(b)),0).toFixed(2);
+    } else {
+      subtotal = 0;
+    }
     let tax = (subtotal * 0.085).toFixed(2);
     let shipping = (subtotal < 500 ? 10 : 0).toFixed(2);
     let grandtotal = (Number(subtotal) + Number(tax) + Number(shipping)).toFixed(2);
@@ -65,7 +67,7 @@ class Cart extends React.Component {
 
           {this.props.cart.map( (product, idx) => {
             return (
-              this.cartItem(product)
+              this.cartItem(product,idx)
             );
           }
         )

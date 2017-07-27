@@ -1,6 +1,6 @@
 import {merge} from "lodash";
 import {RECEIVE_PRODUCT, RECEIVE_PRODUCTS} from "../actions/product_actions";
-import {RECEIVE_ALL_MESSAGES} from "../actions/message_actions";
+import {RECEIVE_ALL_MESSAGES, MAKE_MESSAGE} from "../actions/message_actions";
 
 
 const nullState = {
@@ -32,7 +32,10 @@ const productReducer = (state = nullState, action) => {
     case RECEIVE_PRODUCTS:
       return Object.assign(newState,{allProducts: action.products});
     case RECEIVE_ALL_MESSAGES:
-      return Object.assign(newState,{messages:action.messages});
+      return Object.assign(newState,{messages: action.messages});
+    case MAKE_MESSAGE:
+      const messages = Object.assign({}, newState.messages, {[action.message.id]:action.message});
+      return Object.assign(newState, {messages});
     default:
       return state;
   }

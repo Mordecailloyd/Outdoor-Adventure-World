@@ -36,9 +36,9 @@ class Navbar extends React.Component {
             </div>
             <div className="RightNav">
               <button onClick={this.handleLogout.bind(this)} type="button" className="session-button">Logout</button>
-              <a>
+              <div>
                 <CartIcon requestCart={requestCart} cart={cart} />
-              </a>
+              </div>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
                 <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
               </a>

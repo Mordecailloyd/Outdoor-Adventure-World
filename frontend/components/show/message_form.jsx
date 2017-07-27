@@ -15,17 +15,18 @@ export default class MessageForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({rating: parseInt(this.state.rating)});
-    this.setState({product_id: parseInt(this.props.selectedProduct.id)});
-    debugger
-    this.props.createMessage(this.state).then(()=>{
-      this.setState({
-        title: '',
-        body: '',
-        rating: '',
-        product_id: this.props.selectedProduct.id
-      });
-    }) ;
+    this.setState({rating: parseInt(this.state.rating)}, ()=>
+      this.setState({product_id: parseInt(this.props.selectedProduct.id)}, () =>
+        this.props.createMessage(this.state).then(()=>{
+          this.setState({
+            title: '',
+            body: '',
+            rating: '',
+            product_id: this.props.selectedProduct.id
+          });
+        })
+      )
+    );
   }
 
   update(property) {
