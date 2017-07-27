@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import SearchBarContainer from '../search/search_bar_container';
+import CartIcon from '../cart/cart_icon';
 
 class Navbar extends React.Component {
 
@@ -13,6 +14,7 @@ class Navbar extends React.Component {
 
 
   render() {
+    const {requestCart, cart} = this.props;
     const logo = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_80/v1500489133/oaw_logo_heksfp.png";
     if (this.props.currentUser){
       return (
@@ -34,6 +36,9 @@ class Navbar extends React.Component {
             </div>
             <div className="RightNav">
               <button onClick={this.handleLogout.bind(this)} type="button" className="session-button">Logout</button>
+              <a>
+                <CartIcon requestCart={requestCart} cart={cart} />
+              </a>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
                 <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
               </a>

@@ -1,14 +1,16 @@
 
 
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class CartIcon extends React.Component {
   constructor(props) {
     super(props);
+    this.cartCount=this.cartCount.bind(this);
   }
 
   componentWillMount() {
+    debugger
     this.props.requestCart();
   }
 
