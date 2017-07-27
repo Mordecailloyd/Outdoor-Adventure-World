@@ -4,6 +4,7 @@ import Home from './home/home_container';
 import ShowContainer from './show/show_container';
 import SearchBarContainer from './search/search_bar_container';
 import SessionFormContainer from './session_form/session_form_container';
+import CartContainer from './cart/cart_container';
 import {Route, Redirect, Switch,
   Link, HashRouter } from 'react-router-dom';
 import Navbar from './navbar/navbar_container';
@@ -15,8 +16,9 @@ const App = () => (
       <Navbar />
       <div>
         <div className='spacer' ></div>
+        <CartContainer />
         <Route exact path= "/" component={Home} />
-        <Route path = "/products/:productId" component={ShowContainer} /> 
+        <Route path = "/products/:productId" component={ShowContainer} />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </div>

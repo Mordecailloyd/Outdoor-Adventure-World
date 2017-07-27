@@ -1,32 +1,29 @@
-
 import React from 'react';
 import { Link } from 'react-router';
 
-class CartIcon extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentWillMount() {
-    this.props.requestCart();
-  }
-
-  cartCount() {
-    if (this.props.cart.length > 0) {
-      return (
-        <span className="cart-count">{this.props.cart.length}</span>
-      );
-    }
-  }
-
-
-  render() {
+const CartItem = ({props}) => {
+  console.log("made it to cartitem");
+  debugger
+  const destroyItem = () => destroyCartItem(product.id);
   return (
-    <Link to ="/cart">
-    <img className="shop-cart" src="http://res.cloudinary.com/dmdj7eggw/image/upload/v1478726332/carticon_juveu1.png"/>
-    {this.cartCount()}
-    </Link>
-  );}
-}
+  <div className="cart-item">
+      <div className="cart-item-image">
+        <img src={product.image_url}/>
+      </div>
+      <div className="cart-item-details">
+        <Link to={"/product/" + product.id}><div className="cart-item-title">{product.title}</div></Link>
+        <p className="cart-item-description">{product.body}</p>
+      </div>
+      <div className="cart-item-removal">
+        <button
+          className="remove-cart-item"
+          onClick={destroyItem}>
+          Remove Item From Cart
+        </button>
+      </div>
+      <div className="cart-item-price">{product.price}</div>
+    </div>
+  );
+};
 
-export default CartIcon;
+export default CartItem;

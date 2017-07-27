@@ -10,11 +10,7 @@ const cartReducer = (state = defaultCart, action) => {
   let newState = [];
   switch (action.type) {
     case RECEIVE_CART:
-    //
-      return newState;
     case REMOVE_CART_ITEM:
-    //
-      return newState;
     case RECEIVE_CART_ITEM:
       return action.cart;
     case CLEAR_CART:

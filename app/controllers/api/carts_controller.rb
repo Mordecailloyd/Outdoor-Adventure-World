@@ -12,8 +12,6 @@ class Api::CartsController < ApplicationController
     end
   end
 
-  def show
-  end
 
   def index
     # find user cart
