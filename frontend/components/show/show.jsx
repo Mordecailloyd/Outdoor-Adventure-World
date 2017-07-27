@@ -1,6 +1,6 @@
 import { Link, withRouter } from 'react-router-dom';
 import React from 'react';
-
+import MessageForm from './message_form';
 
 class Show extends React.Component {
   constructor(props) {
@@ -80,6 +80,10 @@ class Show extends React.Component {
           </div>
         </div>
         <div className = 'show-messages'>
+          <div>
+            <MessageForm {...this.props}/>
+
+          </div>
           <p>{this.props.messages.map(
               message=> message.title
             )}</p>
