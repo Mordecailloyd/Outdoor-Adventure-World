@@ -5,11 +5,13 @@ export const UPDATE_MESSAGE = 'UPDATE_MESSAGE';
 export const MAKE_MESSAGE = "MAKE_MESSAGE";
 import * as MessageUtil from '../util/message_api_util';
 
-export const requestAllMessages = () => (dispatch) => {
-  return MessageUtil.fetchAllMessages()
+export const requestAllMessages = (productId) => (dispatch) => {
+  return MessageUtil.fetchAllMessages(productId)
     .then(messages => dispatch(receiveAllMessages(messages)));
 };
 
+
+//doesnt exist on backend
 export const requestSingleMessage = (id) => (dispatch) => {
   return MessageUtil.fetchSingleMessage(id).then(message => {
     dispatch(receiveSingleMessage(message));

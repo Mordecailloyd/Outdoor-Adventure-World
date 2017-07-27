@@ -9,6 +9,7 @@
 # nick = User.create!(:username => "Nicholas", :password => "password")
 
 Product.destroy_all
+Message.destroy_all
 
 fleece = Product.create!(:title => "Momentum Full-Zip Fleece Jacket", :body =>
 "Layer up for your early-morning approaches with The North Face Momentum
@@ -284,5 +285,8 @@ tent5 = Product.create!(:brand => 'Tepui Tents', :price => 2250.00, :title => 'T
 
 
 nick = User.create!(:username => "Nicholas", :password => "password")
+aomame = User.create!(:username => "Aomame", :password => "password")
 
-message1 = Message.create!(:rating => 6, :body => 'blah', :title => 'title', :author_id => nick.id, :product_id => fleece.id )
+message1p1 = Message.create!(:rating => 6, :body => 'blah', :title => 'title', :author_id => nick.id, :product_id => fleece.id )
+message2p1 = Message.create!(:rating =>1, :body => 'Wow This product was so expensive and broke on my first outing!', :title => "Don't buy!", :author_id => aomame.id, :product_id => fleece.id )
+message1p2 = Message.create!(:rating =>1, :body => 'Wow This product was so expensive and broke on my first outing!', :title => "Don't buy!", :author_id => aomame.id, :product_id => sleeping_bag1.id )

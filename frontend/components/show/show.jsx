@@ -17,6 +17,7 @@ class Show extends React.Component {
 
       //this.props.id ?
       this.props.requestProduct(nextProps.match.params.productId);
+      this.props.requestAllMessages(nextProps.match.params.productId);
     }
   }
 
@@ -24,8 +25,21 @@ class Show extends React.Component {
     const productId = parseInt(this.props.match.params.productId);
     //this.props.id ?
     this.props.requestProduct(productId);
+    this.props.requestAllMessages(productId);
   }
+
+
+
+
+  handleAddToCart(e) {
+    e.preventDefault();
+    const productId = parseInt(this.props.match.params.productId);
+    this.props.requestAddCartItem(productId);
+  }
+
+
   render() {
+    debugger
     const featuresList = this.props.selectedProduct.features.map(feature => {
       return (
         <li key={feature} >

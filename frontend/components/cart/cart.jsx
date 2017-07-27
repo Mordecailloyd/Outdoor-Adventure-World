@@ -13,8 +13,8 @@ class Cart extends React.Component {
   }
 
   cartItem(product) {
-      console.log("made it to cartitem");
-      debugger
+
+
       const destroyItem = () => this.props.requestDestroyCartItem(product.id);
       return (
         <div className="cart-item">

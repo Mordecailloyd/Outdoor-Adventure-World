@@ -1,16 +1,11 @@
-export const fetchAllMessages = () => {
+export const fetchAllMessages = (productId) => {
   return $.ajax({
     method: 'GET',
-    url: 'api/messages'
+    url: `api/messages?product_id=${productId}`,
   });
 };
 
-export const fetchSingleMessage = (id) => {
-  return $.ajax({
-    method: 'GET',
-    url: `api/messages/${id}`
-  });
-};
+
 
 export const createMessage = (message) => {
   return $.ajax({
