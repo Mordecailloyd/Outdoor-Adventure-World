@@ -63,15 +63,15 @@ The search is handled on the back-end which takes the user input and strips it o
 # Screenshots
 
 ## Search
-![results screenshot](./docs/screenshots/Search)
+![results screenshot](./docs/screenshots/Search.png)
 
 
 ## Product Display Page
-![product screenshot](./docs/screenshots/show)
+![product screenshot](./docs/screenshots/show.png)
 
 
 ## Product Features Page
-![product screenshot](./docs/screenshots/show_features)
+![product screenshot](./docs/screenshots/show_features.png)
 
 
 ## Shopping Cart
