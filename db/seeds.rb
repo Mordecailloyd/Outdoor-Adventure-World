@@ -153,6 +153,36 @@ bike5 = Product.create!(:brand => 'Electra', :price => 499.00, :title => "Electr
 "Specs are subject to change"
 ])
 
+bike6 = Product.create!(:brand => 'Bianchi', :price => 1299.99, :title => '2014 Bianchi Volpe',
+:body => "We closely studied the needs for touring and all road cycling. By borrowing successful bits of frame geometry, tubing profiles, and materials; we are able to provide you the evolution of our Volpe platform which started three decades ago.",
+:image_url => "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_350/v1501202307/Y3BC3U-Volpe-tiagra-triple_t0vsuf.jpg",
+:features => [" MODEL: Volpe",
+"SKU: YMBC3",
+"COLOR	F6 - Black Satin",
+"SIZES: 46-49-51-53-55-57-59-61",
+"FRAME: Bianchi Chromolite Cr-Mo, TIG welded, double butted",
+'FORK: Bianchi Cr-Mo, 1 1/8"',
+"HEADSET: VP-A51",
+"SHIFTER: Shimano Tiagra 10sp",
+"REAR DERAILLEUR: Shimano Tiagra 10sp",
+"FRONT DERAILLEUR: Shimano Tiagra",
+"CRANKSET: Shimano Tiagra 50X39X30",
+"BOTTOM BRACKET: Included w/crankset",
+"CHAIN: Shimano CN-HG54 10sp",
+"CASSETTE: Shimano Tiagra 11-32T",
+"BRAKE: Shimano BR-CX50",
+"RIM / WHEELSET: Alex XC23",
+"FRONT HUB: Shimano RS400-S",
+"REAR HUB: Shimano RS400-S",
+"TIRE: Vittoria Randonneur 700x28c",
+"STEM: Reparto Corse 3D forged alloy",
+"HANDLEBAR: Bianchi Alloy flat top",
+"HANDLEBAR TAPE / GRIP: Bianchi Cork w/embossed logo",
+"SADDLE: WTB Speed V",
+"SEATPOST: Bianchi Alloy"
+
+
+])
 
 bike_helmet1 = Product.create!(:brand => 'Giro', :price => 270.00 , :title => 'Giro Synthe MIPS Bike Helmet',
 :body => 'The Giro Synthe MIPS is the pinnacle of road helmet designs, combining the performance gains of aerodynamics and light weight with great cooling power to enhance rider comfort and efficiency.',

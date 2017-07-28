@@ -84,8 +84,8 @@ class Show extends React.Component {
 
           </div>
           <div>{this.props.messages.map(
-              message=> message.title
-
+              message=>
+              <MessageShow message={message} />
             )}
           </div>
         </div>

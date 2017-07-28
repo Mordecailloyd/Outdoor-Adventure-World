@@ -44,10 +44,12 @@
   display: flex;
   flex-direction: row;
   align-items: space-around;
+
 }
 .navbar-container {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .spacer{

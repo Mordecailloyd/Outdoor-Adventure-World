@@ -18,14 +18,14 @@ export default class MessageShow extends React.Component {
     return (
         <form className="form-horizontal" >
           <fieldset>
-            <h4>Review This Product</h4>
+            
             <div className="form-group">
               <label for="inputRating" className="col-lg-2 control-label">
                 Rating:</label>
               <div className="col-lg-10">
                   <span type="text" className="form-control"
                     id="inputRating" placeholder="Rating"
-                    value={this.state.rating} />
+                    >{this.props.message.rating}</span>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@ export default class MessageShow extends React.Component {
               <div className="col-lg-10">
                   <span type="text" className="form-control"
                     id="inputTitle" placeholder="Title"
-                    value={this.state.title} />
+                    >{this.props.message.title}</span>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ export default class MessageShow extends React.Component {
               <div className="col-lg-10">
                   <span type="body" className="form-control"
                     id="inputBody" placeholder="Body"
-                    value={this.state.body} />
+                    >{this.props.message.body}</span>
                 </div>
             </div>
           </fieldset>
