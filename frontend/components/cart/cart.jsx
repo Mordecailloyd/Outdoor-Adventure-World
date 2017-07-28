@@ -42,7 +42,6 @@ class Cart extends React.Component {
     let explanation = () => (alert("This is where I would request credit card info. As this is a demo site it does nothing."));
     let subtotal;
     if (this.props.cart.length){
-      debugger
       subtotal = (this.props.cart.map(product => product.price).reduce((a, b) => parseFloat(a) + parseFloat(b),0)).toFixed(2);
     } else {
       subtotal = 0;
