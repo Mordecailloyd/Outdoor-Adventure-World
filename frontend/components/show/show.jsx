@@ -59,10 +59,9 @@ class Show extends React.Component {
             </div>
             <p className = "show-img-container"><img src= {this.props.selectedProduct.image_url} /></p>
           </div>
-          <div className = "checkout">
+          <div className = "show-checkout">
             <p className = 'img-price'>${this.props.selectedProduct.price}</p>
-            <p><button className="btn btn-success"
-              type="submit" value="Add To Cart" onClick={this.handleAddToCart} /></p>
+            <p><button className="checkout-button" type="submit"  onClick={this.handleAddToCart}>Add To Cart</button></p>
           </div>
         </div>
         <div className = 'show-description'>

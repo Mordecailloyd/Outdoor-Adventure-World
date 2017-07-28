@@ -20,6 +20,41 @@
   max-width: 75%;
 }
 
+.checkout-button{
+  border: 0;
+  margin: 10px;
+  padding: 6px 15px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 10%;
+  width: 30%;
+}
+
+.checkout-button:hover {
+  cursor: pointer;
+  background-color: #494;
+}
+
+.message-button{
+  border: 0;
+  margin: 10px;
+  padding: 6px 15px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+}
+
+.message-button:hover {
+  cursor: pointer;
+  background-color: #494;
+}
+
+
 .splash{
   padding: 20px;
 }

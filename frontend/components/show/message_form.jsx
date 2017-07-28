@@ -37,41 +37,42 @@ export default class MessageForm extends React.Component {
     return (
         <form className="form-horizontal" onSubmit={this.handleSubmit}>
           <fieldset>
-            <div class="form-group">
-              <label for="inputRating" class="col-lg-2 control-label">
+            <h4>Review This Product</h4>
+            <div className="form-group">
+              <label for="inputRating" className="col-lg-2 control-label">
                 Rating:</label>
-                <div class="col-lg-10">
-                  <input type="text" class="form-control"
+              <div className="col-lg-10">
+                  <input type="text" className="form-control"
                     id="inputRating" placeholder="Rating"
                     value={this.state.rating}
                     onChange={this.update('rating')} />
                 </div>
             </div>
 
-            <div class="form-group">
-              <label for="inputTitle" class="col-lg-2 control-label">
+            <div className="form-group">
+              <label for="inputTitle" className="col-lg-2 control-label">
                 Title:</label>
-                <div class="col-lg-10">
-                  <input type="text" class="form-control"
+              <div className="col-lg-10">
+                  <input type="text" className="form-control"
                     id="inputTitle" placeholder="Title"
                     value={this.state.title}
                     onChange={this.update('title')} />
                 </div>
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <label for="inputBody"
-                class="col-lg-2 control-label">Body:</label>
-                <div class="col-lg-10">
-                  <input type="body" class="form-control"
+                className="col-lg-2 control-label">Body:</label>
+              <div className="col-lg-10">
+                  <input type="body" className="form-control"
                     id="inputBody" placeholder="Body"
                     value={this.state.body}
                     onChange={this.update('body')} />
                 </div>
             </div>
-            <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-2">
-                <button type="submit" className="btn btn-info"
+            <div className="form-group">
+              <div className="col-lg-10 col-lg-offset-2">
+                <button type="submit" className="message-button"
                   onClick={this.handleSubmit}>Submit</button>
               </div>
             </div>
