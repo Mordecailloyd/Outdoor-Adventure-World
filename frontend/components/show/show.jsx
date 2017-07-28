@@ -41,7 +41,6 @@ class Show extends React.Component {
 
 
   render() {
-    console.log('props',this.props);
 
     const featuresList = this.props.selectedProduct.features.map(feature => {
       return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CartItem = ({props}) => {
-  console.log("made it to cartitem");
   const destroyItem = () => destroyCartItem(product.id);
   return (
   <div className="cart-item">
