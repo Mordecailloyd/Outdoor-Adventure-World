@@ -36,8 +36,23 @@ Malicious users attempting to impersonate others by filling their own window's l
 
 Items added to the shopping cart are maintained in a join table on the back-end. By storing a cart for each user on the back-end, tying a users id with a products id. I am able to maintain a users checkout cart even if they leave the website and return hours later, even on a different machine with a different browser.
 
-When a user logs in, any products previously added to their cart are pulled from the back-end and merged with the front-end state allowing the information to be displayed in the navigation bar(header) and the checkout page. I built a custom route and action in the controller to remove all cart products a user has when they complete an action, to reduce the number of Ajax requests to my Rack middleware and back-end controllers.
+When a user logs in, any products previously added to their cart are pulled from the back-end and merged with the front-end state allowing the information to be displayed in the navigation bar(header) and the checkout page. As a result a user can log out and return to the website maintaining their shopping cart.
 
+I built a custom route and action in the controller to remove all cart products a user has when they complete an action, to reduce the number of Ajax requests to my Rack middleware and back-end controllers.
+
+```ruby
+Rails.application.routes.draw do
+  namespace :api, defaults: {format: :json} do
+    resources :users, only: [:create]
+    resource :sessions, only: [:create, :destroy]
+    resources :messages, only: [:create, :destroy, :update, :index]
+    resources :products, only: [:index, :show]
+    resources :carts, only: [:create, :index, :destroy, :show]
+    delete "/user/cart/", to: "carts#destroy_all"
+  end
+  root "static_pages#root"
+end
+```
 
 ### Search Bar Utilizing Query Strings
 
@@ -48,19 +63,19 @@ The search is handled on the back-end which takes the user input and strips it o
 # Screenshots
 
 ## Search
-![results screenshot](docs/screenshots/Search)
+![results screenshot](./docs/screenshots/Search)
 
 
 ## Product Display Page
-![product screenshot](docs/screenshots/show)
+![product screenshot](./docs/screenshots/show)
 
 
 ## Product Features Page
-![product screenshot](docs/screenshots/show features)
+![product screenshot](./docs/screenshots/show_features)
 
 
 ## Shopping Cart
-![cart screenshot](docs/screenshots/shopping cart)
+![cart screenshot](./docs/screenshots/shopping_cart.png)
 
 
 # Future Directions for the Project
@@ -71,8 +86,8 @@ A sidebar filter for results by a polymorphic tag table on the backend ie: Bikes
 ### More Seeds
 Ties in with almost every other feature. Provide more data on the site to view.
 
-## Refactoring
-Reduce number of controlled components, learn how to use refs to access child components and their methods from their parents.  Eliminate unnecessary item from component states that are already being passed in via props.
-
 ### Past Purchases
-Current upon checking out, the user's shopping cart is simply dumped out. Ideally there would be a mock payment screen and a table to handle past purchases so that they can viewed in the account details.
+Keep track of past purchases to auto populate an index page with goods matching tags on purchased items.
+
+### Shopping Cart Cookie
+To track products in a cart of someone not logged in, allowing them to log in and then reach checkout.
