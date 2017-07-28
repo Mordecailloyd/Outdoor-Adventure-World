@@ -1,12 +1,23 @@
+
 # Outdoor Adventure World
 
 
+[Outdoor Adventure World live][heroku]
+
+[heroku]: https://outdoor-adventure-world.herokuapp.com/#/signup
 
 
 
 
 
+Outdoor-Adventure-World is a web application inspired by MooseJaw. In contrast to the Moosejaw website, Outdoor-Adventure-World is a single page application that runs off a static page. My site only re-renders individual components as needed due to changes in slices of the state.
+Outdoor-Adventure-World is built on a PostgreSQL database, with a Ruby on Rails back-end. The front end is written in Javascript using React and Redux to maintain the single page application.
 
+
+![homepage screenshot](docs/screenshots/)
+
+
+# Features & Implementation
 
 
 ### User Authentication
@@ -16,34 +27,3 @@ Upon logging out the session token in the database is reset. The cookies value i
 
 As long as the user allows the cookie to persist in local storage, refreshing and closing the window will not cause the user to lose access to their cart or credentials. If a user is present on page load React will retrieve the user's additional information. So long as the users session token is in the database the back-end will return all relevant information. As a result users who do not log out will not need to log in again upon refreshing or re-opening the page.
 Malicious users attempting to impersonate others by filling their own window's local storage with a user object will not be able to gain authorization from the back-end.
-
-
-
-
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
