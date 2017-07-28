@@ -14,7 +14,7 @@ Outdoor-Adventure-World is a web application inspired by MooseJaw. In contrast t
 Outdoor-Adventure-World is built on a PostgreSQL database, with a Ruby on Rails back-end. I use Jbuilder to generate JSON objects for the front-end, which is written in Javascript using React and Redux to maintain the single page application.
 
 
-![homepage screenshot](docs/screenshots/)
+
 
 
 # Features & Implementation
