@@ -39,7 +39,7 @@ export default class MessageForm extends React.Component {
           <fieldset>
             <h4>Review This Product</h4>
             <div className="form-group">
-              <label for="inputRating" className="col-lg-2 control-label">
+              <label  className="col-lg-2 control-label">
                 Rating:</label>
               <div className="col-lg-10">
                   <input type="text" className="form-control"
@@ -50,7 +50,7 @@ export default class MessageForm extends React.Component {
             </div>
 
             <div className="form-group">
-              <label for="inputTitle" className="col-lg-2 control-label">
+              <label  className="col-lg-2 control-label">
                 Title:</label>
               <div className="col-lg-10">
                   <input type="text" className="form-control"
@@ -61,7 +61,7 @@ export default class MessageForm extends React.Component {
             </div>
 
             <div className="form-group">
-              <label for="inputBody"
+              <label
                 className="col-lg-2 control-label">Body:</label>
               <div className="col-lg-10">
                   <input type="body" className="form-control"

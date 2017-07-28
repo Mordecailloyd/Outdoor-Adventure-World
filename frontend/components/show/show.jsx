@@ -44,7 +44,7 @@ class Show extends React.Component {
 
     const featuresList = this.props.selectedProduct.features.map(feature => {
       return (
-        <li key={feature} >
+        <li key={feature.length} >
           {feature}
         </li>
       );}
@@ -79,12 +79,12 @@ class Show extends React.Component {
         </div>
         <div className = 'show-messages'>
           <div>
-            <MessageForm {...this.props}/>
+            <MessageForm {...this.props} key = 'form'/>
 
           </div>
           <div>{this.props.messages.map(
               message=>
-              <MessageShow message={message} />
+              <MessageShow key={message.id} message={message}/>
             )}
           </div>
         </div>

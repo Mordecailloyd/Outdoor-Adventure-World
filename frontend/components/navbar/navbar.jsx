@@ -40,7 +40,7 @@ class Navbar extends React.Component {
                 <CartIcon requestCart={requestCart} cart={cart} />
               </div>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
-                <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
+                <img className="github" src="https://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
               </a>
             </div>
           </nav>
@@ -71,7 +71,7 @@ class Navbar extends React.Component {
                 Sign Up
               </Link>
               <a href="https://github.com/Mordecailloyd/Outdoor-Adventure-World" target="_blank">
-                <img className="github" src="http://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
+                <img className="github" src="https://res.cloudinary.com/dt3tnq8um/image/upload/v1500497806/icons8-GitHub-64_jtd9e1.png" id="github-link" aria-hidden="true" />
               </a>
             </div>
           </nav>
