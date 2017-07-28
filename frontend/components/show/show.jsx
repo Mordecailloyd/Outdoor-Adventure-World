@@ -82,11 +82,13 @@ class Show extends React.Component {
             <MessageForm {...this.props} key = 'form'/>
 
           </div>
-          <div>{this.props.messages.map(
+          <ul>{this.props.messages.map(
               message=>
-              <MessageShow key={message.id} message={message}/>
+              <li key={message.id}>
+                <MessageShow key={message.id} message={message}/>
+              </li>
             )}
-          </div>
+          </ul>
         </div>
       </div>
     );

@@ -25,7 +25,7 @@ class CartIcon extends React.Component {
   render() {
   return (
     <Link to ="/cart">
-    <img className="shop-cart" src="http://icons.iconarchive.com/icons/iconsmind/outline/48/Shopping-Cart-icon.png"/>
+    <img className="shop-cart" src="https://icons.iconarchive.com/icons/iconsmind/outline/48/Shopping-Cart-icon.png"/>
     {this.cartCount()}
     </Link>
   );}

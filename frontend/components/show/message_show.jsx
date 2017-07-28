@@ -16,7 +16,7 @@ export default class MessageShow extends React.Component {
 
   render() {
     return (
-        <form className="form-horizontal" key={this.props.message.id}>
+        <form className="form-horizontal" >
           <fieldset >
 
             <div className="form-group" key='1'>
@@ -24,7 +24,7 @@ export default class MessageShow extends React.Component {
                 Rating:</label>
               <div className="col-lg-10">
                   <span type="text" className="form-control"
-                    id="inputRating" placeholder="Rating"
+                     placeholder="Rating"
                     >{this.props.message.rating}</span>
                 </div>
             </div>
@@ -34,7 +34,7 @@ export default class MessageShow extends React.Component {
                 Title:</label>
               <div className="col-lg-10">
                   <span type="text" className="form-control"
-                    id="inputTitle" placeholder="Title"
+                     placeholder="Title"
                     >{this.props.message.title}</span>
                 </div>
             </div>
@@ -44,7 +44,7 @@ export default class MessageShow extends React.Component {
                 className="col-lg-2 control-label">Body:</label>
               <div className="col-lg-10">
                   <span type="body" className="form-control"
-                    id="inputBody" placeholder="Body"
+                    placeholder="Body"
                     >{this.props.message.body}</span>
                 </div>
             </div>
