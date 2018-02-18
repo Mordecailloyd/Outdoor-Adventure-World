@@ -27,22 +27,23 @@ class Home extends React.Component {
     );
     return (
       <div className= 'product-items'>
-        <h1>Welcome to Outdoor Adventure World!</h1>
         <div className = "splash">
+          <div className = "splash-text"><h1>Welcome to Outdoor Adventure World!</h1>
+          </div>
           <Link to = "/">
           </Link>
-          <img src = "https://res.cloudinary.com/dt3tnq8um/image/upload/q_auto:low/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
+          <img src = "http://res.cloudinary.com/dt3tnq8um/image/upload/c_limit,h_1000/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
         </div>
 
           <div className = "sample-product">
             <link to = "/">
             </link>
-            <img src = "https://res.cloudinary.com/dt3tnq8um/image/upload/q_auto:low/v1500915319/zoe-deal-223392_t53kui.jpg" />
+            <img src = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915319/zoe-deal-223392_t53kui.jpg" />
           </div>
           <div className = "sample-index">
             <Link to = "/">
             </Link>
-            <img src="https://res.cloudinary.com/dt3tnq8um/image/upload/q_auto:low/v1500915526/rob-bye-125311_yvj1nw.jpg" />
+            <img src="https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915526/rob-bye-125311_yvj1nw.jpg" />
           </div>
 
         <div className = "footer">

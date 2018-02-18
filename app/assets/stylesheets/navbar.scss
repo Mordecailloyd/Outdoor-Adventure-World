@@ -1,3 +1,6 @@
+$content-max-width: 1400px;
+
+
 .LeftNav {
   padding: 10px;
 }
@@ -49,6 +52,7 @@
 .navbar-container {
   position: fixed;
   width: 100%;
+  max-width: $content-max-width;
   z-index: 1000;
 }
 
@@ -58,10 +62,8 @@
 
 
 .app{
-  // height: 1000px;
-  // background-image: url('https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1060x600/format/jpg/quality/85/http%3A%2F%2Fhss-prod.hss.aol.com%2Fhss%2Fstorage%2Fadam%2Fe71787c02fa155539686892adef95467%2F75620674.jpeg');
-  // background-size: cover;
   backface-visibility: hidden;
+  max-width: $content-max-width;
 }
 
 

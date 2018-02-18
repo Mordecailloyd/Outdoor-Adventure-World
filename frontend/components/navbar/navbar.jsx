@@ -18,7 +18,7 @@ class Navbar extends React.Component {
     const logo = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,h_80/v1500489133/oaw_logo_heksfp.png";
     if (this.props.currentUser){
       return (
-        <div className = 'navbar-container'>
+        <div className = 'navbar-container navbar-expand-lg navbar-light bg-light'>
           <nav className='navbar'>
             <div className="LeftNav">
               <Link to="/">
@@ -48,7 +48,7 @@ class Navbar extends React.Component {
       );
     } else {
       return (
-        <div className ='navbar-container'>
+        <div className = 'navbar-container navbar-expand-lg navbar-light bg-light'>
           <nav className='navbar'>
             <div className="LeftNav">
               <Link to="/">
