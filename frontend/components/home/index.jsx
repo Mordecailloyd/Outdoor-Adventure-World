@@ -32,7 +32,7 @@ class Home extends React.Component {
           </div>
           <Link to = "/">
           </Link>
-          <img src = "http://res.cloudinary.com/dt3tnq8um/image/upload/c_limit,h_1000/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
+          <img src = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_limit,h_1000/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
         </div>
 
           <div className = "sample-product sample-item">
