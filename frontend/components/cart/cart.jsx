@@ -59,7 +59,6 @@ class Cart extends React.Component {
           <div className="column-labels">
             <label className="cart-item-image">Image</label>
             <label className="cart-item-details">Product</label>
-            <label className="cart-item-location">location</label>
             <label className="cart-item-removal">Remove</label>
             <label className="cart-item-price">Price</label>
             <label className="right-edge"></label>
