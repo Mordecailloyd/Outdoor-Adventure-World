@@ -79,30 +79,22 @@
 //
 // }
 .sample-product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 50%;
-    max-height: 100%;
-    height: 40vw; //this viewport width value determines the relative size of the product img.
+    background-image: url("https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915319/zoe-deal-223392_t53kui.jpg");
 }
 
-.sample-product img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+
 .sample-index{
-  width: 50%;
-  max-width: 50%;
-  height: 40vw;
-  // padding: 20px;
-}
-.sample-index img{
-  max-height: 100%;
+  background-image: url("https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915526/rob-bye-125311_yvj1nw.jpg");
 }
 
+.sample-item{
+  width: 50%;
+  max-height: 600px;
+  height: 40vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%,50%;
+}
 
 .app{
   max-width: 1000px;

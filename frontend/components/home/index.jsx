@@ -35,15 +35,14 @@ class Home extends React.Component {
           <img src = "http://res.cloudinary.com/dt3tnq8um/image/upload/c_limit,h_1000/v1500914391/thomas-schweighofer-75393_ivuqvs.jpg" />
         </div>
 
-          <div className = "sample-product">
+          <div className = "sample-product sample-item">
             <link to = "/">
             </link>
-            <img src = "https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915319/zoe-deal-223392_t53kui.jpg" />
+
           </div>
-          <div className = "sample-index">
+          <div className = "sample-index sample-item">
             <Link to = "/">
             </Link>
-            <img src="https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915526/rob-bye-125311_yvj1nw.jpg" />
           </div>
 
         <div className = "footer">
