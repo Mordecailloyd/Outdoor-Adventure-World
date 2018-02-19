@@ -87,3 +87,10 @@ https://trello.com/b/B9thYlen
 - Cookie cart contents
 - Search for products by tags/ product name
 - using backend requests
+
+
+
+concerns: shopping cart # located inside of shopping cart img.
+Max shopping cart size (99?)
+From shopping cart click image to redirect to informational show page of product
+multiple copies of same product in shopping cart - combine and provide total?
