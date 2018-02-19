@@ -34,6 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 #ruby=2.4.1
 ruby '2.4.1'
 
+gem 'nokogiri', '>= 1.8.1'
 
 
 group :development, :test do
