@@ -97,3 +97,32 @@ multiple copies of same product in shopping cart - combine and provide total?
 Abstracted code for thumbnail generation of a picture/ thumbnail picture scaling fix (re: fix used on div's for splash screen)
 
 Blue hover login/signup buttons
+
+4 images across bottom for flex ( 25%)
+
+create index pages
+
+
+move git hub icon to bottom
+
+login modal center buttons + padding between buttons and input fields
+larger white space (y height )
+
+
+product selections jumps to middle of screen instead of top
+
+
+messages- Review (use stars one body block - clean up)
+
+Review Title:
+Review: b REI : models this well.
+
+Messages needs boxes with spacing and lines etc
+
+
+Add to cart button
+
+
+Move the text on OAW icon to the right- make it bigger !
+
+Font: Old Standard
