@@ -95,3 +95,5 @@ Max shopping cart size (99?)
 From shopping cart click image to redirect to informational show page of product
 multiple copies of same product in shopping cart - combine and provide total?
 Abstracted code for thumbnail generation of a picture/ thumbnail picture scaling fix (re: fix used on div's for splash screen)
+
+Blue hover login/signup buttons
