@@ -106,7 +106,7 @@ create index pages
 move git hub icon to bottom
 
 login modal center buttons + padding between buttons and input fields
-larger white space (y height )
+larger white space (y height ) X
 
 
 product selections jumps to middle of screen instead of top
