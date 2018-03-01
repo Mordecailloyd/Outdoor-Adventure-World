@@ -16,7 +16,7 @@ class SessionForm extends React.Component {
 
   handleDemo(e) {
   e.preventDefault();
-  let name = "Nicholas";
+  let name = "BobBelcher";
   let password = "password";
   for (let i = 0; i < name.length; i++) {
     setTimeout(() => this.setState({

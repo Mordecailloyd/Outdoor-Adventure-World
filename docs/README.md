@@ -120,9 +120,6 @@ Review: b REI : models this well.
 Messages needs boxes with spacing and lines etc
 
 
-Add to cart button
-
-
 Move the text on OAW icon to the right- make it bigger !
 
 Font: Old Standard
