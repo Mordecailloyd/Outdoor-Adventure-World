@@ -7,7 +7,7 @@ const SearchResults = ({shown, results, visibility}) => {
   if (shown) {
 
 
-    const names = Object.keys(results).map(id => <Link to={"/products/"+ id}>
+    const names = Object.keys(results).map(id => <Link to={"/products/"+ id} key={id}>
     <li className={`search-result-item ${visibility}`}>{results[id].title}</li></Link>);
 
     return (

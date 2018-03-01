@@ -44,7 +44,7 @@ class Show extends React.Component {
 
     const featuresList = this.props.selectedProduct.features.map(feature => {
       return (
-        <li key={feature.length} >
+        <li key={feature.id} >
           {feature}
         </li>
       );}
