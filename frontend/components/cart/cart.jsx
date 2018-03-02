@@ -10,6 +10,7 @@ class Cart extends React.Component {
 
   componentDidMount(){
     this.props.requestCart();
+    window.scrollTo(0, 0)
   }
 
   cartItem(product,idx) {
