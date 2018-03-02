@@ -111,7 +111,7 @@ larger white space (y height ) X
 
 
 product selections jumps to middle of screen instead of top X
-foo.com/product/id visuals with jump to top of screen?
+foo.com/product/id visuals with jump to top of screen? X
 
 
 messages- Review (use stars one body block - clean up)
@@ -121,6 +121,9 @@ Review: b REI : models this well.
 
 Messages needs boxes with spacing and lines etc
 
+Herokuapp update bundler?
+
+fix electra woman's bike image size X
 
 Move the text on OAW icon to the right- make it bigger !
 

@@ -70,18 +70,16 @@ $font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
   width: 75%;
   font-family: "Georgia";
 }
-
-
 /* Body/Header stuff */
-
 .shopping-cart {
   margin-top: 0px;
-  h1 {
-    padding-left: 45px;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 0px;
-  }
+}
+.shopping-cart  h1 {
+  padding-left: 45px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
 
   label {
     color: $color-label;
@@ -108,14 +106,12 @@ $font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid $color-border;
-
   .cart-item-image {
     text-align: center;
-    img {
-      width: 100px;
-    }
   }
-
+  .cart-item-image img {
+    width: 100px;
+  }
   .cart-item-details {
     .cart-item-title {
       opacity: 1;
