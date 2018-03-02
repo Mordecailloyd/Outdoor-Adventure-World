@@ -28,8 +28,8 @@ class Show extends React.Component {
     //this.props.id ?
     this.props.requestProduct(productId);
     this.props.requestAllMessages(productId);
+    window.scrollTo(0, 0)
   }
-
 
 
 
