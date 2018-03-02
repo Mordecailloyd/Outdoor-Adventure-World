@@ -10,6 +10,7 @@ class Home extends React.Component {
 
   componentDidMount(){
     this.props.products();
+    window.scrollTo(0, 0)
   }
 
   render() {
