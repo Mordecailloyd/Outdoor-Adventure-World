@@ -90,15 +90,16 @@ https://trello.com/b/B9thYlen
 
 
 
-concerns: shopping cart # located inside of shopping cart img.
+concerns: shopping cart # located inside of shopping cart img. X
 Max shopping cart size (99?)
-From shopping cart click image to redirect to informational show page of product
+From shopping cart click image to redirect to informational show page of product X(used product name instead of image)
 multiple copies of same product in shopping cart - combine and provide total?
 Abstracted code for thumbnail generation of a picture/ thumbnail picture scaling fix (re: fix used on div's for splash screen)
 
 Blue hover login/signup buttons
 
-4 images across bottom for flex ( 25%)
+4 images across bottom for flex ( 25%) X
+(I found 3 to look nicer 33%)
 
 create index pages
 
@@ -109,7 +110,8 @@ login modal center buttons + padding between buttons and input fields
 larger white space (y height ) X
 
 
-product selections jumps to middle of screen instead of top
+product selections jumps to middle of screen instead of top X
+foo.com/product/id visuals with jump to top of screen?
 
 
 messages- Review (use stars one body block - clean up)
@@ -122,4 +124,4 @@ Messages needs boxes with spacing and lines etc
 
 Move the text on OAW icon to the right- make it bigger !
 
-Font: Old Standard
+Font: Old Standard X
