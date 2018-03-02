@@ -1,6 +1,8 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.app{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .product-item{ //defines flex behavior for individual products in product list
   display: flex;
   flex-direction: column;
@@ -9,18 +11,15 @@
   padding: 20px;
   justify-content: center;
 }
-
 .product-items{ //defines flex behavior for full product list
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .product-item-img{
   max-width: 75%;
 }
-
 .checkout-button{
   border: 0;
   margin: 10px;
@@ -32,12 +31,10 @@
   height: 10%;
   width: 30%;
 }
-
 .checkout-button:hover {
   cursor: pointer;
   background-color: #494;
 }
-
 .message-button{
   border: 0;
   margin: 10px;
@@ -49,16 +46,13 @@
   height: 35px;
   width: 150px;
 }
-
 .message-button:hover {
   cursor: pointer;
   background-color: #494;
 }
-
 .splash{
   position: relative;
 }
-
 .splash-text{
   position: absolute;
   left: 5%;
@@ -66,20 +60,15 @@
   text-align: left;
   max-width: 30%;
 }
-
 .splash img{
   max-width: 100%;
 }
-
 .sample-product {
     background-image: url("https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915319/zoe-deal-223392_t53kui.jpg");
 }
-
-
 .sample-index{
   background-image: url("https://res.cloudinary.com/dt3tnq8um/image/upload/c_scale,w_1000/v1500915526/rob-bye-125311_yvj1nw.jpg");
 }
-
 .sample-item{
   width: 50%;
   max-height: 600px;
@@ -87,10 +76,4 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%,50%;
-}
-
-.app{
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
