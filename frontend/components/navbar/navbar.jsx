@@ -31,6 +31,7 @@ class Navbar extends React.Component {
                 <span id="index-nav-link"></span>
               </Link>
             </div>
+            <b>Outdoor Adventure World</b>
             <div className="MiddleNav">
               <SearchBarContainer />
             </div>
