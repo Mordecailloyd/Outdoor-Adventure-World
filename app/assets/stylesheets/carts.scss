@@ -40,7 +40,10 @@ $font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
 
 
 /* This is used as the traditional .clearfix class */
-.group:before,
+.group:before {
+    content: '';
+    display: table;
+}
 .group:after {
     content: '';
     display: table;
@@ -74,16 +77,15 @@ $font-bold: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
 .shopping-cart {
   margin-top: 0px;
 }
-.shopping-cart  h1 {
+.shopping-cart h1 {
   padding-left: 45px;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 0px;
 }
 
-  label {
-    color: $color-label;
-  }
+.shopping-cart label {
+  color: $color-label;
 }
 
 
