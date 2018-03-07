@@ -128,3 +128,15 @@ fix electra woman's bike image size X
 Move the text on OAW icon to the right- make it bigger !
 
 Font: Old Standard X
+
+FS: bug with search bar - Clear search bar after-page change or off click
+
+clear login page put on front page beneath explanation
+
+resume : Mcdonalds -> Work experience
+Fix github pinned
+career fair next tuesday ) print ten resume's (write out urls and remove links- githubs links
+)
+work resume
+Bag of candy / snack  
+5 clearbit/direct recruiter email  CC: eli on one of em for feedback )
