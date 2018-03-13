@@ -26,8 +26,10 @@ class SearchBar extends React.Component {
 
 
   hide() {
+    debugger;
     setTimeout(() => {
-      this.setState({visibility: 'hide'});
+      debugger;
+      this.setState({visibility: 'hide', query: "", resultsShown: false});
     },300);
   }
 
