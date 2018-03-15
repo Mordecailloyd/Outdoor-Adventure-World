@@ -24,14 +24,14 @@ class Navbar extends React.Component {
               <Link to="/">
                 <div id="index-route">
                   <i id="oal_logo" aria-hidden="true"></i>
-                  <span id="nav-title"><img src={logo} /></span>
+                  <span id="nav-title"><b>Outdoor Adventure World</b></span>
                 </div>
               </Link>
               <Link to="/">
                 <span id="index-nav-link"></span>
               </Link>
             </div>
-            <b>Outdoor Adventure World</b>
+
             <div className="MiddleNav">
               <SearchBarContainer />
             </div>
