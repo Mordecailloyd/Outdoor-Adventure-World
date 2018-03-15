@@ -136,9 +136,9 @@ clear login page put on front page beneath explanation
 resume : Mcdonalds -> Work experience
 Fix github pinned
 career fair next tuesday ) print ten resume's (write out urls and remove links- githubs links
-)
-work resume
-Bag of candy / snack
+) X
+work resume X
+Bag of candy / snack X
 
-  <span id="nav-title"><img src={logo} /></span> 
+  <span id="nav-title"><img src={logo} /></span>
 5 clearbit/direct recruiter email  CC: eli on one of em for feedback )
