@@ -12,6 +12,3 @@ const configureStore = (preloadedState = {}) => (
 );
 
 export default configureStore;
-
-
-// , logger

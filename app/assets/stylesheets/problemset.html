@@ -1,0 +1,43 @@
+<ul id="listToDestroy">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+</ul>
+
+
+document.getElementById("listToDestroy").addEventListener('click',e => {
+  e.preventDefault();
+  let el = e.target.parentNode;
+  el.parentNode.removeChild(el);
+  <!-- el.innerHTML = ""; -->
+})
+
+<!--
+current target - where the event listener is attached
+Target - what triggered the event  -->
+
+
+<div id="doubleHolder">
+  <button class="double">double</button>
+</div>
+
+document.getElementById("doubleHolder").addEventListener('click',e => {
+  e.preventDefault();
+  let child = e.target;
+  let el = e.currentTarget;
+  el.removeChild(child);
+
+  if (e.target.classList.contains('double')){
+    let btn = document.createElement('button')
+    btn.setAttribute('class','double');
+    btn.innerHTML="double";
+
+    let btn2 = document.createElement('button')
+    btn.setAttribute('class','double');
+    btn.innerHTML="double";
+
+    this.appendChild(btn);
+    this.appendChild(btn2);
+    this.removeChild(e.target);
+  }
+})
